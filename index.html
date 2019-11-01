@@ -7,10 +7,10 @@
 
 	<!-- CSS Stylesheets -->
 	<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
 	<!-- <link rel="stylesheet" href="css/faststyle.css"> -->
 	<link rel="stylesheet" href="css/vendor/slick/slick.css">
 	<link rel="stylesheet" href="css/vendor/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.min.css">
 
 
 
@@ -19,7 +19,7 @@
 <body>
 
 	<!-- Navbar starts -->
-	<nav class="navbar navbar-expand-md navbar-light">
+	<nav class="navbar navbar-expand-md navbar-dark">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -36,12 +36,18 @@
 	  </div>
 	</nav>
 
-	<div class="hero-principal container" style="">
-		<div class="row justify-content-center align-items-center">
-			<div class="hero-poster col-12 col-sm-4 d-flex" style="background: ">
+	<div class="hero-principal container-fluid justify-content-center" style="">
+		<div class="row justify-content-center">
+			<div class="hero-video">
+				<video src="https://ak6.picdn.net/shutterstock/videos/1014547376/preview/stock-footage-slow-motion-young-woman-running-in-purple-flowers-field-in-iceland-travel-and-adventure-concept.webm" autoplay loop poster="">
+
+				</video>
+
+			</div>
+			<div class="hero-poster col-6 col-sm-5 col-md-5 col-lg-3 d-flex" style="background: ">
 				<img  class="" src="http://images.fandango.com/images/fandangoblog/Fan_JusticeLeagueposter_blo.jpg" style="width: 100%; height: 100%"; alt="">
 			</div>
-			<div class="hero-info col-12 col-sm-8 col-md-6" style="background: ">
+			<div class="hero-info col-12 col-sm-7 col-md-5" style="background: ">
 				<p class="info-name">The Martian</p >
 				<p class="info-year">2015</p>
 				<p class="info-duration">2hr 24 min | Action, Adventure, Comedy, Drama, Sci-Fi</p>
@@ -56,75 +62,445 @@
 		</div>
 	</div>
 
-
-	<div id="filter" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-	  <div class="btn-categories btn-group mr-2" role="group" aria-label="First group">
-	    <button type="button" class="btn btn-default">1</button>
-	    <button type="button" class="btn btn-default">2</button>
-	    <button type="button" class="btn btn-default">3</button>
-	    <button type="button" class="btn btn-default">4</button>
-	    <button type="button" class="btn btn-default">5</button>
-	    <button type="button" class="btn btn-default">6</button>
+	<div id="filter" class="btn-toolbar mt-3" role="toolbar" aria-label="Toolbar with button groups">
+	  <div class="btn-categories btn-group mr-2 flex-wrap" role="group" aria-label="First group">
+	    <button type="button" class="btn btn-default">Popoular</button>
+	    <button type="button" class="btn btn-default">Puntaje</button>
+	    <button type="button" class="btn btn-default">Accion</button>
+	    <button type="button" class="btn btn-default">Aventura</button>
+	    <button type="button" class="btn btn-default">Comedia</button>
+	    <button type="button" class="btn btn-default">Fantasia</button>
 	  </div>
 	</div>
 
+	<div class="movies-section">
+		<!-- Slider -->
+		<div class="slider-wraper container-fluid mb-4 row flex-column">
+			<div class="slide-category container mt-3" style=""><p>Las mas vistas</p></div>
+			<div class="your-class container">
 
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
 
-	<!-- partial:index.partial.html -->
-	<!-- <div class="container-fluid row-slide row justify-content-center"> -->
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
 
-		<!-- slide item -->
-	  <!-- <div class="slide-card">
-	    <div class="wrapper">
-	      <div class="date">
-	        <span class="day">12</span>
-	        <span class="month">Aug</span>
-	      </div>
-	      <div class="data">
-	        <div class="content">
-	          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
-	          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
-						The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
-						The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
-					</div>
-						<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
-	        </div>
-	      </div>
-	    </div>
-	  </div> -->
-	<!-- </div> -->
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
 
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
 
-	<div class="">
-		<div class="slide-card">
-			<div class="wrapper">
-				<div class="date">
-					<span class="day">12</span>
-					<span class="month">Aug</span>
-				</div>
-				<div class="data">
-					<div class="content">
-						<h2 class="title">Boxing icon has the will for a couple more fights</h2>
-						<div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
-						The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
-						The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
-					</div>
-						<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
-					</div>
-				</div>
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
 			</div>
 		</div>
 
+		<!-- End Slider -->
 
 
+		<!-- Slider -->
+		<div class="slider-wraper container-fluid mb-4">
+			<div class="your-class container">
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+
+				<!-- Slide item -->
+			  <div class="slider-item d-flex justify-content-center">
+					<div class="slide-card">
+				    <div class="wrapper">
+				      <div class="date">
+				        <span class="day">12</span>
+				        <span class="month">Aug</span>
+				      </div>
+				      <div class="data">
+				        <div class="content">
+				          <h2 class="title">Boxing icon has the will for a couple more fights</h2>
+				          <div class="text"><p>The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.
+									The highly anticipated world championship fight will take place at 10am and is the second major boxing blockbuster in the nation after 43 years.</p>
+								</div>
+									<div class="info-buttons row d-flex justify-content-end"><div class="col-6 px-2 mt-2"><button class="info-btn btn-ahora">Ver ahora</button></div></div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- End Slider -->
 	</div>
 
 
-	<div class="your-class">
-	  <div>your content</div>
-	  <div>your content</div>
-	  <div>your content</div>
-	</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

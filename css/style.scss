@@ -2,19 +2,30 @@
 @import "./scss/variables";
 @import "./scss/mixins";
 
+
+// Colors
+$c-black: #222f3e;
 $c-red : #b71540;
 $c-blue : #1e3799;
 $c-darkblue : #0c2461;
+$c-green: #77d7b9;
+$c-darkgray: #8395a7;
+
+* {
+  box-sizing: border-box;
+}
 
 html, body {
-    min-height: 100% !important;
-    height: 100%;
-    width: 100%;
+
+    // min-height: 100% !important;
+    // height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    background: $c-black;
 }
 
 body {
 	position: absolute;
-	background-color: pink;
 	top: 0;
 	left: 0;
 }
@@ -42,9 +53,43 @@ nav {
 
 
 .hero-principal {
-	margin-top: 100px;
-}
+  position: relative;
+  padding: 100px 40px 40px;
+  min-height: calc(100vh - 58.08px);
+  display: flex;
+  align-items: center;
+  // box-sizing: border-box;
+  overflow-y: hidden;
 
+
+
+  .hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    // background-image: url("https://i.vimeocdn.com/video/755075492.webp?mw=1200&mh=633&q=70");
+
+    video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+      &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.6);
+    }
+  }
+}
 
 .hero-poster {
 	position: relative;
@@ -54,8 +99,12 @@ nav {
 		justify-content: center;
 	}
 	img {
-		max-width: 250px;
+    width: 100%;
+		max-width: 350px;
+    height: 100%;
+    object-fit: cover;
 		padding-right: 1rem;
+    align-self: flex-start;
 	}
 }
 
@@ -64,9 +113,11 @@ nav {
 	// display: flex;
 	// flex-direction: column;
 	align-items: flex-start;
+  max-width: 700px;
 	p {
 		text-align: left;
 		margin-bottom: 8px;
+    color: $white;
 	}
 	.info-name {
 		font-size: 1.8rem;
@@ -124,13 +175,21 @@ nav {
 .btn-categories {
 	width: 100%;
 	justify-content: center;
+  align-items: center;
+  background: $c-black;
+
+  @include media-breakpoint-down(sm) {
+    margin-right: 0 !important;
+  }
+
 	.btn {
-		flex-basis: 150px;
+		flex-basis: calc((100% - 300px)/6);
+    max-width: 130px;
 		flex-grow: 0;
 
 		margin: .375rem;
 		color: inherit;
-		text-transform: uppercase;
+		text-transform: capitalize;
 		word-wrap: break-word;
 		white-space: normal;
 		cursor: pointer;
@@ -144,13 +203,16 @@ nav {
 		padding: .84rem 2.14rem;
 		font-size: .81rem;
 
-
+    @include media-breakpoint-down(sm) {
+      flex-basis: 30%;
+      margin-left: 0;
+    }
 
 	}
 
 	.btn-default {
 		color: #fff;
-		background-color: #2bbbad!important;
+		background-color: $c-darkgray !important;
 		&:hover {
 			background-color: darken(#2bbbad, 10) !important;
 		}
@@ -164,11 +226,7 @@ nav {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 // Variables
-$regal-blue: #034378;
-$san-juan: #2d4e68;
-$bermuda: #77d7b9;
-$white: #fff;
-$black: #000;
+
 $open-sans: 'Open Sans',
 sans-serif;
 
@@ -178,12 +236,45 @@ sans-serif;
 }
 
 // Base styles
+
+.movies-section {
+  background: #222f3e;
+}
+
+.slider-wraper {
+  margin: 0;
+
+  .slide-category {
+
+    p{
+      display: inline-block;
+      font-size: 1.5em;
+      padding-left: calc(1.7rem);
+      font-weight: 700;
+      color: $white;
+
+      @media (min-width: 1200px) {
+        padding-left: calc(1.7rem - 15px);
+      }
+
+    }
+  }
+
+
+}
+
+
+.slider-item {
+  outline: none !important;
+}
+
 .slide-card {
   padding: 0 1.7rem;
-  width: 300px !important;
+  min-width: 300px !important;
+  max-width: 300px;
   .wrapper {
     background-color: $white;
-    min-height: 400px;
+    min-height: 350px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
@@ -200,7 +291,7 @@ sans-serif;
     transform: translateY(calc(160px + 1em));
     transition: transform 0.3s;
     .content {
-      padding: 1em;
+      padding: 0.5em 1em 1em 1em;
       position: relative;
       z-index: 1;
     }
@@ -236,7 +327,7 @@ sans-serif;
 
     &::-webkit-scrollbar-thumb:hover,
     &::-webkit-scrollbar-thumb:active {
-      background-color: #2d3436;
+      background-color: $c-black;
     }
   }
 }
@@ -249,7 +340,7 @@ sans-serif;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: $bermuda;
+    background-color: $c-green;
     color: $white;
     padding: 0.6em;
     span {
@@ -283,61 +374,12 @@ sans-serif;
   }
 }
 
-// Slide items responsive behavior
 
-@include media-breakpoint-down(md) {
-  .row-slide {
-    // max-width: 900px;
-    margin: 50px auto 0;
+@media (max-width: 599px) {
+  .slick-next.slick-arrow {
+    right: 0;
   }
-
-  // Base styles
-  .slide-card {
-    padding: 0 1.7rem;
-    width: 30%;
-    .wrapper {
-      min-height: 350px;
-      overflow: hidden;
-      &:hover {
-        .data {
-          transform: translateY(0);
-        }
-      }
-    }
-    .data {
-      transform: translateY(calc(120px + 1em));
-      .content {
-        padding: 1em;
-        position: relative;
-        z-index: 1;
-      }
-    }
-    .title {
-      margin-top: 10px;
-      font-size: 20px;
-    }
-    .text {
-      height: 120px;
-      margin: 0;
-      overflow-y: auto;
-    }
+  .slick-prev.slick-arrow {
+    left: 0;
   }
-
-  .slide-card {
-    .date {
-      padding: 0.8em;
-      .day {
-        font-size: 24px;
-      }
-      .month,
-      .year {
-        font-size: 12px;
-      }
-    }
-  }
-}
-
-
-.slick-track {
-  width: 40% !important;
 }
